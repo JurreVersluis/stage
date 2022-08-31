@@ -1,0 +1,26 @@
+.Zoekbalk{
+  font-size: 20px;
+  margin-left: 20px;
+  display: block;
+}
+.video-titel{
+
+}
+
+.video-auteur{
+
+}
+
+.video-stats{
+
+}
+
+.thumbnail{
+  display:block;
+  width: 300px;
+}
+
+.video-previeuw{
+  width: 300px;
+  display: inline-block;
+}
