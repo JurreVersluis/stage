@@ -2,60 +2,92 @@
 <html>
   <head>
     <title>Youtube</title>
-    <link rel="stylesheet" href="Youtube.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles/General.css">
+    <link rel="stylesheet" href="styles/Header.css">
+    <link rel="stylesheet" href="styles/Video.css">
+    <link rel="stylesheet" href="styles/Sidebar.css">
   </head>
 
-  
-  <body>
+  <!--Header ↓↓ -->
+  <body">
     <div class="Header">
       <div class="left-section">
         <img class="hamburger-menu" src="icons/hamburger-menu.svg">
         <img class="youtube-logo" src="icons/youtube-logo.svg">
       </div>
-      <div class="middle-section"><input class="Zoekbalk"type="text" placeholder="Search">
+      <div class="middle-section">
+        <input class="Searchbar"type="text" placeholder="Search">
         <button class="search-button">
           <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-search-button">
           <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
         </button>
       </div>
 
       <div class="right-section">
-        <img class="upload-icon" src="icons/upload.svg">
+        <div class="upload-icon-container">
+                  <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+
         <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
-        <img class="notification-icon" src="icons/notifications.svg">
-        <img class="current-user-icon" src="profile-pictures/unnamed.jpg">
+        <div class="notification-icon-container">
+            <img class="notification-icon" src="icons/notifications.svg">
+            <div class="notifications-count">3</div>
+        </div>
+        
+
+        <img class="current-user-icon" src="profile-pictures/profile-picture.jpg">
       </div>
     </div>
-    
+  <!--Header ^^-->
 
+  <!--Sidebar ↓↓ -->
+  <div class="Sidebar">
+    <div class="sidebar-link"><img  src="icons/home.svg"><p>Home</p></div>
+    <div class="sidebar-link"><img  src="icons/explore.svg"><p>Explore</p></div>
+    <div class="sidebar-link"><img  src="icons/subscriptions.svg"><p>subscriptions</p></div>
+    <div class="sidebar-link"><img  src="icons/originals.svg"><p>originals</p></div>
+    <div class="sidebar-link"><img  src="icons/youtube-music.svg"><p>Youtube Music</p></div>
+    <div class="sidebar-link"><img  src="icons/library.svg"><p>Library</p></div>
+  </div>
+  <!--Sidebar ^^-->
+
+
+  <!--Video 1 ↓↓-->
     <div class="Video-grid">
       <div class="video-previeuw">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="images/thumbnail1.png">
+          <a href="https://www.youtube.com/watch?v=DYqhpMqhixw"><img class="thumbnail" src="images/thumbnail1.png"></a>
+          <div class="video-time">16:35</div>
         </div>
         <div class="video-info-grid">
-          <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/chess.jpg"></div>
+          <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/profile1.jpg"></div>
           <div class="video-info">
             <p class="video-titel">How One Company Destroyed An Entire Country | xQc Reacts</p>
             <p class="video-auteur">xQcow</p> 
             <p class="video-stats">79K weergaven &#8226;  12 uur geleden</p>
           </div>
         </div>
-      </div>
-  
-  <!--Eerste video ^^-->
-  
+      </div> 
+  <!--Video 1 ^^-->
+
+  <!--Video 2 ↓↓-->
       <div class="video-previeuw">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="images/thumbnail2.png">
+          <a href="https://www.youtube.com/watch?v=rbCXajpMaiU&t=689s"><img class="thumbnail" src="images/thumbnail2.png"></a>
+          <div class="video-time">13:05</div>
         </div>
         <div class="video-info-grid">
-          <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/xqc-react.jpg"></div>
+          <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/profile2.jpg"></div>
           <div class="video-info">
             <p class="video-titel">Kasparov Shocks Hikaru With Signature Move</p>
             <p class="video-auteur">Chess.com</p> 
@@ -63,12 +95,13 @@
           </div>
         </div>
       </div>
+  <!--Video 2 ^^-->
   
-      <!--Tweede video ^^-->
-  
+  <!--Video 3 ↓↓-->
       <div class="video-previeuw">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="images/thumbnail3.jpg">
+          <a href="https://www.youtube.com/watch?v=w9n36SfEhfU&t=24s"><img class="thumbnail" src="images/thumbnail3.jpg"></a>
+          <div class="video-time">37:19</div>
         </div>
         <div class="video-info-grid">
           <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/profile3.jpg"></div>
@@ -79,15 +112,16 @@
           </div>
         </div>
       </div>
-  
-      <!--Derde video ^^-->
-      
+  <!--Video 3 ^^-->
+
+  <!--Video 4 ↓↓-->
       <div class="video-previeuw">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="images/thumbnail4.jpg">
+          <a href="https://www.youtube.com/watch?v=cH7wcb2WYSE&t=20s"><img class="thumbnail" src="images/thumbnail4.jpg"></a>
+          <div class="video-time">28:59</div>
         </div>
         <div class="video-info-grid">
-          <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/profile3.jpg"></div>
+          <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/profile4.jpg"></div>
           <div class="video-info">
             <p class="video-titel">My Dad Made Me Stop Watching Tiktoks</p>
             <p class="video-auteur">xQcOW</p> 
@@ -96,14 +130,16 @@
         </div>
       </div>
   
-      <!-- video 4 ^^-->
-      
+  <!--video 4 ^^-->
+
+  <!--Video 5 ↓↓-->
       <div class="video-previeuw">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="images/thumbnail5.jpg">
+          <a href="https://www.youtube.com/watch?v=Xvun9Bz6XdA"><img class="thumbnail" src="images/thumbnail5.jpg"></a>
+          <div class="video-time">1:46</div>
         </div>
         <div class="video-info-grid">
-          <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/xqc-react.jpg"></div>
+          <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/profile5.jpg"></div>
           <div class="video-info">
             <p class="video-titel">Salty Water Purifies Alcohol</p>
             <p class="video-auteur">
@@ -112,15 +148,16 @@
           </div>
         </div>
       </div>
-  
-      <!-- video 5 ^^-->
-      
+  <!--video 5 ^^-->
+
+  <!--Video 6 ↓↓-->
       <div class="video-previeuw">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="images/thumbnail6.jpg">
+          <a href="https://www.youtube.com/watch?v=0A0PVkKq4no"><img class="thumbnail" src="images/thumbnail6.jpg"></a>
+          <div class="video-time">15:04</div>
         </div>
         <div class="video-info-grid">
-          <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/xqc-react.jpg"></div>
+          <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/profile6.jpg"></div>
           <div class="video-info">
             <p class="video-titel">How I Became the Biggest Streamer in the World for 24 Hours</p>
             <p class="video-auteur">Ludwig</p> 
@@ -128,8 +165,109 @@
           </div>
         </div>
       </div>
-  
-      <!--video 6 ^^-->
+  <!--video 6 ^^-->
+
+    <!--Video 7 ↓↓-->
+    <div class="video-previeuw">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=bf_Nq70kzD8"><img class="thumbnail" src="images/thumbnail7.jpg"></a>
+        <div class="video-time">2:43</div>
+      </div>
+      <div class="video-info-grid">
+        <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/profile7.jpg"></div>
+        <div class="video-info">
+          <p class="video-titel">A day in the life of an Australian</p>
+          <p class="video-auteur">Fairbairn Films</p> 
+          <p class="video-stats">6.553.108 weergaven &#8226; 7 feb. 2019</p>
+        </div>
+      </div>
+    </div>
+<!--video 7 ^^-->
+
+  <!--Video 8 ↓↓-->
+  <div class="video-previeuw">
+    <div class="thumbnail-row">
+      <a href="https://www.youtube.com/watch?v=w1ZROLhgApM"><img class="thumbnail" src="images/thumbnail8.jpg"></a>
+      <div class="video-time">0:35</div>
+    </div>
+    <div class="video-info-grid">
+      <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/profile8.jpg"></div>
+      <div class="video-info">
+        <p class="video-titel">POV: Andrew Tate Catches Me Stealing His Bugatti</p>
+        <p class="video-auteur">Tate Gta</p> 
+        <p class="video-stats">8.539 weergaven &#8226; 2 sep. 2022</p>
+      </div>
+    </div>
+  </div>
+<!--video 8 ^^-->
+
+  <!--Video 9 ↓↓-->
+  <div class="video-previeuw">
+    <div class="thumbnail-row">
+      <a href="https://www.youtube.com/watch?v=s4mGOrbEKbs"><img class="thumbnail" src="images/thumbnail9.jpg"></a>
+      <div class="video-time">12:00</div>
+    </div>
+    <div class="video-info-grid">
+      <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/profile9.jpg"></div>
+      <div class="video-info">
+        <p class="video-titel">A New Slapping Champion Has Arrived</p>
+        <p class="video-auteur">penguinz0</p> 
+        <p class="video-stats">20.842.877 weergaven &#8226; 27 jun. 2019</p>
+      </div>
+    </div>
+  </div>
+<!--video 9 ^^-->
+
+  <!--Video 10 ↓↓-->
+  <div class="video-previeuw">
+    <div class="thumbnail-row">
+      <a href="https://www.youtube.com/watch?v=jSMZoLjB9JE&t=15s"><img class="thumbnail" src="images/thumbnail10.png"></a>
+      <div class="video-time">4:04</div>
+    </div>
+    <div class="video-info-grid">
+      <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/profile10.jpg"></div>
+      <div class="video-info">
+        <p class="video-titel">Passing A Portal Through Itself</p>
+        <p class="video-auteur">minutephysics</p> 
+        <p class="video-stats">478.726 weergaven &#8226; 1 sep. 2022</p>
+      </div>
+    </div>
+  </div>
+<!--video 10 ^^-->
+
+  <!--Video 11 ↓↓-->
+  <div class="video-previeuw">
+    <div class="thumbnail-row">
+      <a href="https://www.youtube.com/watch?v=vGStTAixoCk"><img class="thumbnail" src="images/thumbnail11.png"></a>
+      <div class="video-time">21:17</div>
+    </div>
+    <div class="video-info-grid">
+      <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/profile11.png"></div>
+      <div class="video-info">
+        <p class="video-titel">TFW You Premove Mate From the Bongcloud</p>
+        <p class="video-auteur">GMHikaru</p> 
+        <p class="video-stats">20K weergaven &#8226; 6 uur geleden</p>
+      </div>
+    </div>
+  </div>
+<!--video 11 ^^-->
+
+  <!--Video 12 ↓↓-->
+  <div class="video-previeuw">
+    <div class="thumbnail-row">
+      <a href="https://www.youtube.com/watch?v=eptD5aKfPY8"><img class="thumbnail" src="images/thumbnail12.png"></a>
+      <div class="video-time">8:01</div>
+    </div>
+    <div class="video-info-grid">
+      <div class="profile-picture"><img class="profile-picture-size" src="profile-pictures/profile12.jpg"></div>
+      <div class="video-info">
+        <p class="video-titel">How to Get Rich Starting From $0</p>
+        <p class="video-auteur">Biaheza</p> 
+        <p class="video-stats">100.241  weergaven &#8226; 1 sep. 2022</p>
+      </div>
+    </div>
+  </div>
+<!--video 12 ^^-->
     </div>
   </body>
 </html>
